@@ -55,8 +55,8 @@ function accelerometerError() {
    alert('Error');
 }
 
-function updateFreq(freq) {
-	accelerometerOptions.frequency = freq;
+function updateFreq(rate) {
+	accelerometerOptions.frequency = rate;
 }
 
 
