@@ -50,17 +50,17 @@ $(document).on("pagecreate", "#page1", function () {
       	},
       	data: [{
       		type: "line",
-            legendText: "Sensor X"
+            legendText: "Sensor X",
       		dataPoints : dpsA
             
       	}
                ,{
       		type: "line",
-            legendText: "Sensor Y"
+            legendText: "Sensor Y",
       		dataPoints : dpsB
       	},{
       		type: "line",
-            legendText: "Sensor Z"
+            legendText: "Sensor Z",
       		dataPoints : dpsC
       	}
         ]
