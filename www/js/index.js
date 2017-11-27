@@ -36,10 +36,10 @@ function startSensor() {
 function stopSensor() {
 	navigator.accelerometer.clearWatch(watchID);
 			
-//	$('#sensorX').val("");
-//	$('#sensorY').val("");
-//	$('#sensorZ').val("");
-//	$('#timestamp').val("");
+	$('#sensorX').val("");
+	$('#sensorY').val("");
+	$('#sensorZ').val("");
+	$('#timestamp').val("");
 }
 
 function accelerometerSuccess(acceleration) {
@@ -56,7 +56,7 @@ function accelerometerError() {
 }
 
 function updateFreq(rate) {
-	stopSensor();
+	navigator.accelerometer.clearWatch(watchID);
     accelerometerOptions.frequency = rate;
     startSensor();
 }
